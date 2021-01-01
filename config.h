@@ -4,18 +4,18 @@
 static int topbar = 1;                      /* -b  option; if 0, dmenu appears at bottom     */
 /* -fn option overrides fonts[0]; default X11 font or font set */
 static const char *fonts[] = {
-	"JetBrains Mono Medium:size=9"
+	"JetBrains Mono Medium:size=10"
 };
 static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
 static const char *colors[SchemeLast][2] = {
 	/*     fg         bg       */
-	[SchemeNorm] = { "#F8F8F2", "#282a36" },
-	[SchemeSel] = { "#BD93F9", "#282a36" },
+	[SchemeNorm] = { "#d3dae3", "#222d32" },
+	[SchemeSel] = { "#5ca75b", "#263238" },
 	[SchemeOut] = { "#2e3440", "#88c0d0" },
 };
 /* -l option; if nonzero, dmenu uses vertical list with given number of lines */
 static unsigned int lines      = 0;
-static unsigned int lineheight = 18;         /* -h option; minimum height of a menu line     */
+static unsigned int lineheight = 30;         /* -h option; minimum height of a menu line     */
 
 /*
  * Characters not considered part of a word while deleting words
